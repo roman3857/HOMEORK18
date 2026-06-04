@@ -10,3 +10,19 @@ for (const item of listItems) {
   console.log(`Категорія: ${title}`);
   console.log(`Кількість елементів: ${elementsCount}`);
 }
+
+const ingredients = [
+  "Картопля",
+  "Гриби",
+  "Часник",
+  "Помідори",
+  "Зелень",
+  "Приправи",
+];
+
+const ul = document.querySelector("#ingredients");
+
+
+const createItemLi = (ingradient) => {
+
+}
