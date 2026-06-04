@@ -20,9 +20,12 @@ const ingredients = [
   "Приправи",
 ];
 
-const ul = document.querySelector("#ingredients");
+const ingredientsList = document.querySelector("#ingredients");
 
+const items = ingredients.map((ingredient) => {
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  return li;
+});
 
-const createItemLi = (ingradient) => {
-
-}
+ingredientsList.append(...items);
